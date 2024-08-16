@@ -26,3 +26,18 @@ spring:
           auth: true
           starttls:
             enable: true
+
+application:
+  security:
+    jwt:
+      secret-key: wHIdXKy1nUQ5Qbv9CXJL36PbvpFGC3BY9WYx8hIJmw4u/RkLdGCMGNg3Wmfn4HAx
+      expiration: 86400000 # a day
+  mailing:
+    frontend:
+      activation-url : http://localhost:4200/activate-account
+
+
+server:
+  port: 8088
+
+
