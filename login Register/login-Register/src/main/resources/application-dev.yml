@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/springangulardev
+    username: postgres
+    password: Danidu#678@postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: usernamex1995@gmail.com
+    password: nacmtdlwwfgfmsqj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
