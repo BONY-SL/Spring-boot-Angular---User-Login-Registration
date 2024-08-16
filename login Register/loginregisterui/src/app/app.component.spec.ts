@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'login-register-angular-ui'`, () => {
+  it(`should have as title 'loginregisterui'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('login-register-angular-ui');
+    expect(app.title).toEqual('loginregisterui');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, login-register-angular-ui');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, loginregisterui');
   });
 });

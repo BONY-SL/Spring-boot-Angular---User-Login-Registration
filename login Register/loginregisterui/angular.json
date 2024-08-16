@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "login-register-angular-ui": {
+    "loginregisterui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/login-register-angular-ui",
+            "outputPath": "dist/loginregisterui",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "login-register-angular-ui:build:production"
+              "buildTarget": "loginregisterui:build:production"
             },
             "development": {
-              "buildTarget": "login-register-angular-ui:build:development"
+              "buildTarget": "loginregisterui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "login-register-angular-ui:build"
+            "buildTarget": "loginregisterui:build"
           }
         },
         "test": {
@@ -101,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
